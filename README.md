@@ -2,6 +2,7 @@
 Har inte rensat så mycket i koden, så finns mycket kod som inte används och säkerligen dubletter av vissa SQL-kommandon.
 
 # Exempel-Dictionary med två värden
+```csharp
 public static Dictionary<string, string> SQLQueries = new()
 {
         {   "SelectUsersFromTeam", @"  
@@ -17,8 +18,10 @@ public static Dictionary<string, string> SQLQueries = new()
             WHERE Leagues.id = @id AND Users.isDeleted = 0
         " },
 }
+```
 
 # Min generiska SelectAll-metod:
+```csharp
 public List<dynamic> SelectAll<GET, FROM>(int id)
 {
     List<dynamic> list;
@@ -34,8 +37,12 @@ public List<dynamic> SelectAll<GET, FROM>(int id)
     }
     return list;
 }
-
+```
 # För att hämta en användares alla lag skriver vi:
+```csharp
 SelectAll<Team, User>(userId)
+```
 # För att hämta en turnerings alla användare skriver vi:
+```csharp
 SelectAll<User, Tournament>(tournamentId)
+```
