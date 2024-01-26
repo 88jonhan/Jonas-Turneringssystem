@@ -1,0 +1,74 @@
+{
+    "Title": "MainMenu",
+    "Action": "SubMenu",
+    "Parent": null,
+    "Children": [
+        {
+            "Title": "Teams",
+            "Action": "SubMenu",
+            "Parent": "MainMenu",
+            "Children": [
+                {
+                    "Title": "Create new team",
+                    "Action": "Create",
+                    "Parent": "Teams"
+                },
+                {
+                    "Title": "Show your teams",
+                    "Action": "Show",
+                    "Parent": "Teams"
+                }
+            ]
+        },
+        {
+            "Title": "Leagues",
+            "Action": "SubMenu",
+            "Parent": "MainMenu",
+            "Children": [
+                {
+                    "Title": "Create new league",
+                    "Action": "Add"
+                },
+                {
+                    "Title": "Show your leagues",
+                    "Action": "Show"
+                }
+            ]
+        },
+        {
+            "Title": "Tournaments",
+            "Action": "SubMenu",
+            "Parent": "MainMenu",
+            "Children": [
+                {
+                    "Title": "Add Tournament",
+                    "Action": "Create"
+                },
+                {
+                    "Title": "Show Tournaments",
+                    "Action": "Show"
+                }
+            ]
+        },
+        {
+            "Title": "Settings",
+            "Action": "SubMenu",
+            "Parent": "MainMenu",
+            "Children": [
+                {
+                    "Title": "Change Password",
+                    "Action": "Change"
+                },
+                {
+                    "Title": "Remove Account",
+                    "Action": "Remove"
+                }
+            ]
+        },
+        {
+            "Title": "Log Out",
+            "Action": "LogOut",
+            "Parent": "MainMenu"
+        }
+    ]
+}

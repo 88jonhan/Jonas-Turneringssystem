@@ -1,0 +1,94 @@
+{
+    "Title": "MainMenu",
+    "Action": "SubMenu",
+    "sType": "Menu",
+    "sParent": null,
+    "Children": [
+        {
+            "Title": "Teams",
+            "Action": "SubMenu",
+            "sType": "Menu",
+            "sParent": "MainMenu",
+            "Children": [
+                {
+                    "Title": "Create Team",
+                    "Action": "Create",
+                    "sType": "Team",
+                    "sParent": "Teams"
+                },
+                {
+                    "Title": "Manage Teams",
+                    "Action": "Manage",
+                    "sType": "Team",
+                    "sParent": "Teams"
+                }
+            ]
+        },
+        {
+            "Title": "Leagues",
+            "Action": "SubMenu",
+            "sType": "Menu",
+            "sParent": "MainMenu",
+            "Children": [
+                {
+                    "Title": "Create League",
+                    "Action": "Create",
+                    "sType": "League",
+                    "sParent": "Leagues"
+                },
+                {
+                    "Title": "Manage Leagues",
+                    "Action": "Manage",
+                    "sType": "League",
+                    "sParent": "Leagues"
+                }
+            ]
+        },
+        {
+            "Title": "Tournaments",
+            "Action": "SubMenu",
+            "sType": "Menu",
+            "sParent": "MainMenu",
+            "Children": [
+                {
+                    "Title": "Add Tournament",
+                    "Action": "Create",
+                    "sType": "Tournament",
+                    "sParent": "Tournaments"
+                },
+                {
+                    "Title": "Manage Tournaments",
+                    "Action": "Manage",
+                    "sType": "Tournament",
+                    "sParent": "Tournaments"
+                }
+            ]
+        },
+        {
+            "Title": "Settings",
+            "Action": "SubMenu",
+            "sType": "Menu",
+            "sParent": "MainMenu",
+            "Children": [
+                {
+                    "Title": "Change Password",
+                    "Action": "Change",
+                    "sType": "User",
+                    "sParent": "Settings"
+                },
+                {
+                    "Title": "Remove Account",
+                    "Action": "Remove",
+                    "sType": "User",
+                    "sParent": "Settings"
+                }
+            ]
+        },
+        {
+            "Title": "Log Out",
+            "Action": "LogOut",
+            "sType": "User",
+            "sParent": "MainMenu"
+        }
+    ]
+}
